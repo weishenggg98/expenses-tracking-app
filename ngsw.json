@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1663350078951,
+  "timestamp": 1663352250779,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.734253868fdaa8b4.js",
+        "/main.b305aef54349cbd5.js",
         "/manifest.webmanifest",
         "/polyfills.7edea7133908bc11.js",
         "/runtime.d8c9ad2e52605325.js",
-        "/styles.d715a32fcba611fc.css"
+        "/styles.252407e5220450de.css"
       ],
       "patterns": []
     },
@@ -36,12 +36,7 @@
         "/assets/icons/icon-384x384.png",
         "/assets/icons/icon-512x512.png",
         "/assets/icons/icon-72x72.png",
-        "/assets/icons/icon-96x96.png",
-        "/color.dae87a04d07ca92b.png",
-        "/hue.8b1818380241e6ac.png",
-        "/primeicons.29151a741d66863a.woff",
-        "/primeicons.5f5d08cd089b4e5d.ttf",
-        "/primeicons.76044b1c189cc4d7.svg"
+        "/assets/icons/icon-96x96.png"
       ],
       "patterns": []
     }
@@ -56,18 +51,13 @@
     "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
     "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "/color.dae87a04d07ca92b.png": "ff4c4bcb2207891b292f544edb4da9d2df5d45cf",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/hue.8b1818380241e6ac.png": "f81ae627637a684614aa726e206c73ce099a01fd",
-    "/index.html": "7c777d3f44b85de05a7610ea6b0410464fe1b8a9",
-    "/main.734253868fdaa8b4.js": "efb20ac5bcadf4aaa84fff840a7ab0501ebdb0cb",
+    "/index.html": "547b32884b50ca17a64764a5983f38b2c39793ae",
+    "/main.b305aef54349cbd5.js": "326c845680000334a287f0b05364aad5e3226f0e",
     "/manifest.webmanifest": "e5c98e9b148c1a726fbe4daf11dab6871a5f5bae",
     "/polyfills.7edea7133908bc11.js": "05f0bb06e28b50509e08b4cf73947599a709ea71",
-    "/primeicons.29151a741d66863a.woff": "21e477ea19e15b66344bcc23b3fbb2161092a707",
-    "/primeicons.5f5d08cd089b4e5d.ttf": "e6c86ca90a9fb4282fb35523d56fde00e78a1416",
-    "/primeicons.76044b1c189cc4d7.svg": "621775b2ec555fd2dd152a24390cf6dfeee168b1",
     "/runtime.d8c9ad2e52605325.js": "d221a328e2c83dea313fad5a6aae793c569bca67",
-    "/styles.d715a32fcba611fc.css": "f62d507d1af5ffce278a3f09e66e577c987dc932"
+    "/styles.252407e5220450de.css": "eeb98e0109bd0a7a81dc13d6cd75227b47d5162f"
   },
   "navigationUrls": [
     {
