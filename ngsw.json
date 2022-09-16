@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1663349590282,
-  "index": "/expenses-tracking-app/index.html",
+  "timestamp": 1663350078951,
+  "index": "/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,13 +11,13 @@
         "ignoreVary": true
       },
       "urls": [
-        "/expenses-tracking-app/favicon.ico",
-        "/expenses-tracking-app/index.html",
-        "/expenses-tracking-app/main.734253868fdaa8b4.js",
-        "/expenses-tracking-app/manifest.webmanifest",
-        "/expenses-tracking-app/polyfills.7edea7133908bc11.js",
-        "/expenses-tracking-app/runtime.d8c9ad2e52605325.js",
-        "/expenses-tracking-app/styles.d715a32fcba611fc.css"
+        "/favicon.ico",
+        "/index.html",
+        "/main.734253868fdaa8b4.js",
+        "/manifest.webmanifest",
+        "/polyfills.7edea7133908bc11.js",
+        "/runtime.d8c9ad2e52605325.js",
+        "/styles.d715a32fcba611fc.css"
       ],
       "patterns": []
     },
@@ -29,45 +29,45 @@
         "ignoreVary": true
       },
       "urls": [
-        "/expenses-tracking-app/assets/icons/icon-128x128.png",
-        "/expenses-tracking-app/assets/icons/icon-144x144.png",
-        "/expenses-tracking-app/assets/icons/icon-152x152.png",
-        "/expenses-tracking-app/assets/icons/icon-192x192.png",
-        "/expenses-tracking-app/assets/icons/icon-384x384.png",
-        "/expenses-tracking-app/assets/icons/icon-512x512.png",
-        "/expenses-tracking-app/assets/icons/icon-72x72.png",
-        "/expenses-tracking-app/assets/icons/icon-96x96.png",
-        "/expenses-tracking-app/color.dae87a04d07ca92b.png",
-        "/expenses-tracking-app/hue.8b1818380241e6ac.png",
-        "/expenses-tracking-app/primeicons.29151a741d66863a.woff",
-        "/expenses-tracking-app/primeicons.5f5d08cd089b4e5d.ttf",
-        "/expenses-tracking-app/primeicons.76044b1c189cc4d7.svg"
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/color.dae87a04d07ca92b.png",
+        "/hue.8b1818380241e6ac.png",
+        "/primeicons.29151a741d66863a.woff",
+        "/primeicons.5f5d08cd089b4e5d.ttf",
+        "/primeicons.76044b1c189cc4d7.svg"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/expenses-tracking-app/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "/expenses-tracking-app/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "/expenses-tracking-app/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "/expenses-tracking-app/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "/expenses-tracking-app/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "/expenses-tracking-app/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "/expenses-tracking-app/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "/expenses-tracking-app/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "/expenses-tracking-app/color.dae87a04d07ca92b.png": "ff4c4bcb2207891b292f544edb4da9d2df5d45cf",
-    "/expenses-tracking-app/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/expenses-tracking-app/hue.8b1818380241e6ac.png": "f81ae627637a684614aa726e206c73ce099a01fd",
-    "/expenses-tracking-app/index.html": "43f41d71374d8d38bd9b8967af00003893891331",
-    "/expenses-tracking-app/main.734253868fdaa8b4.js": "efb20ac5bcadf4aaa84fff840a7ab0501ebdb0cb",
-    "/expenses-tracking-app/manifest.webmanifest": "e5c98e9b148c1a726fbe4daf11dab6871a5f5bae",
-    "/expenses-tracking-app/polyfills.7edea7133908bc11.js": "05f0bb06e28b50509e08b4cf73947599a709ea71",
-    "/expenses-tracking-app/primeicons.29151a741d66863a.woff": "21e477ea19e15b66344bcc23b3fbb2161092a707",
-    "/expenses-tracking-app/primeicons.5f5d08cd089b4e5d.ttf": "e6c86ca90a9fb4282fb35523d56fde00e78a1416",
-    "/expenses-tracking-app/primeicons.76044b1c189cc4d7.svg": "621775b2ec555fd2dd152a24390cf6dfeee168b1",
-    "/expenses-tracking-app/runtime.d8c9ad2e52605325.js": "d221a328e2c83dea313fad5a6aae793c569bca67",
-    "/expenses-tracking-app/styles.d715a32fcba611fc.css": "f62d507d1af5ffce278a3f09e66e577c987dc932"
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/color.dae87a04d07ca92b.png": "ff4c4bcb2207891b292f544edb4da9d2df5d45cf",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/hue.8b1818380241e6ac.png": "f81ae627637a684614aa726e206c73ce099a01fd",
+    "/index.html": "7c777d3f44b85de05a7610ea6b0410464fe1b8a9",
+    "/main.734253868fdaa8b4.js": "efb20ac5bcadf4aaa84fff840a7ab0501ebdb0cb",
+    "/manifest.webmanifest": "e5c98e9b148c1a726fbe4daf11dab6871a5f5bae",
+    "/polyfills.7edea7133908bc11.js": "05f0bb06e28b50509e08b4cf73947599a709ea71",
+    "/primeicons.29151a741d66863a.woff": "21e477ea19e15b66344bcc23b3fbb2161092a707",
+    "/primeicons.5f5d08cd089b4e5d.ttf": "e6c86ca90a9fb4282fb35523d56fde00e78a1416",
+    "/primeicons.76044b1c189cc4d7.svg": "621775b2ec555fd2dd152a24390cf6dfeee168b1",
+    "/runtime.d8c9ad2e52605325.js": "d221a328e2c83dea313fad5a6aae793c569bca67",
+    "/styles.d715a32fcba611fc.css": "f62d507d1af5ffce278a3f09e66e577c987dc932"
   },
   "navigationUrls": [
     {
