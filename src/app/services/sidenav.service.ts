@@ -17,4 +17,12 @@ export class SidenavService {
             this.isExpandedSubject.next(true);
         }
     }
+
+    showSideNav() {
+        this.isExpandedSubject.next(true);
+    }
+
+    hideSideNav() {
+        this.isExpandedSubject.next(false);
+    }
 }

@@ -1,6 +1,6 @@
 <mat-toolbar color="primary">
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
-  (click)="toggleSidenav()">
+    (click)="toggleSideNav()">
     <mat-icon>menu</mat-icon>
   </button>
   <span>Expenses Tracking</span>
@@ -9,11 +9,15 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav mode="over" [opened]="isExpanded">
     <mat-nav-list>
-      <mat-list-item [routerLink]="'dashboard'" (click)="isExpanded = false">
+      <mat-list-item [routerLink]="'dashboard'" (click)="toggleSideNav()">
         <mat-icon mat-list-icon>home</mat-icon>
         <span class="menu-item">Dashboard</span>
       </mat-list-item>
-      <mat-list-item [routerLink]="'about'" (click)="isExpanded = false">
+      <mat-list-item [routerLink]="'expenses'" (click)="toggleSideNav()">
+        <mat-icon mat-list-icon>money</mat-icon>
+        <span class="menu-item">Expenses</span>
+      </mat-list-item>
+      <mat-list-item [routerLink]="'about'" (click)="toggleSideNav()">
         <mat-icon mat-list-icon>help_center</mat-icon>
         <span class="menu-item">About</span>
       </mat-list-item>

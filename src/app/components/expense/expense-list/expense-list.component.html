@@ -1,0 +1,16 @@
+<table datatable class="table" [dtOptions]="dtOptions" [dtTrigger]="dtTrigger">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let e of expensesList">
+            <td>{{ e.name }}</td>
+            <td>{{ e.category }}</td>
+            <td>RM {{ e.amount | number : '1.2-2' }}</td>
+        </tr>
+    </tbody>
+</table>
