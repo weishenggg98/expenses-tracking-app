@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { DataTableDirective } from 'angular-datatables';
 import { Type } from 'class-transformer';
 import { Subject } from 'rxjs';
 
@@ -10,6 +11,8 @@ import { Subject } from 'rxjs';
 export class ExpenseListComponent implements OnInit {
     expensesList: Array<ExpenseModel> = new Array<ExpenseModel>();
 
+    @ViewChild(DataTableDirective, { static: false })
+    dtElement!: DataTableDirective;
     dtOptions: DataTables.Settings = {};
     dtTrigger: Subject<any> = new Subject<any>();
 
@@ -17,9 +20,11 @@ export class ExpenseListComponent implements OnInit {
 
     ngOnInit(): void {
         this.dtOptions = {
-            pagingType: 'full_numbers',
-            pageLength: 2,
+            lengthChange: false,
             ordering: true,
+            searching: false,
+            responsive: true,
+            paging: false,
         };
 
         this.getExpensesList();
@@ -36,6 +41,24 @@ export class ExpenseListComponent implements OnInit {
                 this.dtTrigger.next(0);
             });
         }
+    }
+
+    addRecord() {
+        this.expensesList.push({
+            name: 'ABC',
+            category: 'Shopping',
+            remark: 'ABC',
+            amount: Math.random(),
+            createdDateTime: 1663757593941,
+            amountType: 1,
+        });
+
+        this.dtElement.dtInstance.then((dtInstance: DataTables.Api) => {
+            // Destroy the table first
+            dtInstance.destroy();
+            // Call the dtTrigger to rerender again
+            this.dtTrigger.next(0);
+        });
     }
 }
 
