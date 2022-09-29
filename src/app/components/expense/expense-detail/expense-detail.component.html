@@ -1,1 +1,86 @@
-<p>expense-detail works!</p>
+<div class="container">
+  <h2 *ngIf="pageAction === PageAction.Add">Add Expense</h2>
+  <h2 *ngIf="pageAction === PageAction.Update">Update Expense</h2>
+  <form [formGroup]="expenseForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col">
+        <mat-form-field appearance="fill" class="w-100">
+          <mat-label>Title</mat-label>
+          <input matInput formControlName="title">
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <mat-form-field appearance="fill" floatLabel="always" class="w-100">
+          <mat-label>Amount</mat-label>
+          <input matInput placeholder="0.00" currencyMask [options]="currencyConfig" formControlName="amount"
+            inputmode="numeric">
+          <span matPrefix>RM &nbsp;</span>
+        </mat-form-field>
+      </div>
+      <div class="col-md-4">
+        <mat-form-field appearance="fill" class="w-100">
+          <mat-label>Category</mat-label>
+          <mat-select formControlName="category">
+            <mat-option [value]="CategoryType.Others">Others</mat-option>
+            <mat-option [value]="CategoryType.Loan">Loan</mat-option>
+            <mat-option [value]="CategoryType.Bill">Bill</mat-option>
+            <mat-option [value]="CategoryType.Shopping">Shopping</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-md-4">
+        <mat-form-field appearance="fill" class="w-100">
+          <mat-label>Expense Date</mat-label>
+          <input matInput [matDatepicker]="picker" formControlName="dateTime">
+          <mat-hint>DD/MM/YYYY</mat-hint>
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker touchUi #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <mat-form-field appearance="fill" class="w-100">
+          <mat-label>Remark</mat-label>
+          <textarea matInput rows="5" formControlName="remark"></textarea>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <mat-radio-group aria-label="Select an option" formControlName="amountType">
+          <mat-radio-button [value]="AmountType.Credit" name="radio-amount-type" class="me-2">
+            Credit
+          </mat-radio-button>
+          <mat-radio-button [value]="AmountType.Debit" name="radio-amount-type">
+            Debit
+          </mat-radio-button>
+        </mat-radio-group><br><br>
+      </div>
+    </div>
+
+    <button mat-raised-button color="primary" class="me-2" type="submit">Submit</button>
+    <button mat-raised-button color="basic" [routerLink]="['expenses']">Back</button>
+  </form>
+
+  <br>
+
+  <mat-accordion *ngIf="pageAction === PageAction.Update">
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Additional Details
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p *ngIf="expenseForm?.value.createdDateTime">
+        Created Date Time: {{expenseForm.value.createdDateTime | date : 'medium'}}</p>
+      <p *ngIf="expenseForm?.value.updatedDateTime">
+        Updated Date Time: {{expenseForm.value.updatedDateTime | date: 'medium'}}</p>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+</div>

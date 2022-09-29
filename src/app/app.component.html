@@ -1,13 +1,27 @@
 <router-outlet></router-outlet>
 
 <ng-template #dialogNewUpdate>
-    <h2 mat-dialog-title>App Update</h2>
-    <mat-dialog-content class="mat-typography">
-      <h3>A new updates is available for this application.</h3>
-      <p>An update is required so that you can enjoy the latest features and enhancements.</p>
-    </mat-dialog-content>
-    <mat-dialog-actions align="end">
-      <button mat-button mat-dialog-close>Cancel</button>
-      <button mat-button [mat-dialog-close]="true" cdkFocusInitial (click)="proceedUpdateApp()">Install</button>
-    </mat-dialog-actions>    
+  <h2 mat-dialog-title>App Update</h2>
+  <mat-dialog-content class="mat-typography">
+    <h3>A new updates is available for this application.</h3>
+    <p>An update is required so that you can enjoy the latest features and enhancements.</p>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial (click)="proceedUpdateApp()">Install</button>
+  </mat-dialog-actions>
+</ng-template>
+
+<ng-template #dialogNewUser>
+  <h2 mat-dialog-title>First Time Registration</h2>
+  <mat-dialog-content class="mat-typography">
+    <h3>Hi, please enter your username to proceed.</h3>
+    <mat-form-field class="example-full-width" appearance="fill" class="w-100">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="E.g John Doe" [(ngModel)]="inputEmail">
+    </mat-form-field>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button cdkFocusInitial (click)="proceedRegisterNewUser()">Proceed</button>
+  </mat-dialog-actions>
 </ng-template>

@@ -1,0 +1,11 @@
+.btn-add-expense {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .btn-add-expense {
+      right: 5rem;
+    }
+}

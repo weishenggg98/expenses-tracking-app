@@ -1,4 +1,6 @@
-<button mat-raised-button color="primary" (click)="addRecord()">Add Record</button>
+<button mat-fab color="primary" class="btn-add-expense" [routerLink]="['detail']">
+  <mat-icon>add</mat-icon>
+</button>
 
 <div class="table-responsive">
   <table datatable class="table table-hover" [dtOptions]="dtOptions" [dtTrigger]="dtTrigger">
@@ -6,14 +8,25 @@
       <tr>
         <th>Name</th>
         <th>Category</th>
-        <th>Amount</th>
+        <th>Debit</th>
+        <th>Credit</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let e of expensesList">
-        <td>{{ e.name }}</td>
-        <td>{{ e.category }}</td>
-        <td>RM {{ e.amount | number : '1.2-2' }}</td>
+      <tr *ngFor="let e of expensesList" [routerLink]="['detail']" [queryParams]="{id: e.id}">
+        <td>{{ e.title }}</td>
+        <td [ngSwitch]="e.category">
+          <span *ngSwitchCase="CategoryType.Others">Others</span>
+          <span *ngSwitchCase="CategoryType.Loan">Loan</span>
+          <span *ngSwitchCase="CategoryType.Bill">Bill</span>
+          <span *ngSwitchCase="CategoryType.Shopping">Shopping</span>
+        </td>
+        <td>
+          <span *ngIf="e.amountType === AmountType.Debit">{{ e.amount | number : '1.2-2' }}</span>
+        </td>
+        <td>
+          <span *ngIf="e.amountType === AmountType.Credit">{{ e.amount | number : '1.2-2' }}</span>
+        </td>
       </tr>
     </tbody>
   </table>

@@ -1,5 +1,5 @@
-import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import { Component, OnInit } from '@angular/core';
+import { UserDataService } from 'src/app/services/user-data.service';
 
 @Component({
   selector: 'app-about',
@@ -7,20 +7,13 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-  @ViewChild('snackBarTemplate')
-  snackBarTemplate!: TemplateRef<any>;
-  showRickRoll = false;
-
-  constructor(private _snackBar: MatSnackBar) { }
+  constructor(private userDataService: UserDataService) { }
 
   ngOnInit(): void {
   }
-  
-  onBtnClicked() {
-    this._snackBar.openFromTemplate(this.snackBarTemplate, {
-      duration: 2 * 1000,
-    });
 
-    this.showRickRoll = true;
+  clearUserData() {
+    this.userDataService.clearUserData();
+    location.reload();
   }
 }

@@ -1,58 +1,23 @@
 <div class="row">
-  <div class="col-md-8">
-    <mat-card class="example-card">
-      <mat-card-title>Shiba Inu</mat-card-title>
-      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-      <mat-card-content>
-        <p>This card indeterminates progress bar.</p>
-        <p>{{longText}}</p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
-      </mat-card-actions>
+  <div class="col">
+    <mat-card>
+      <mat-card-title>
+        <h2>Total Accumulated Spendings</h2>
+      </mat-card-title>
+      <mat-card-subtitle>RM {{totalAccumulatedSpending | number : '1.2-2'}}</mat-card-subtitle>
     </mat-card>
   </div>
-  <div class="col-md-4">
-    <mat-card class="example-card">
-      <mat-card-title>Shiba Inu</mat-card-title>
-      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-      <mat-card-content>
-        <p>This card indeterminates progress bar.</p>
-        <p>{{longText}}</p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
-      </mat-card-actions>
-    </mat-card>
-  </div>
-  <div class="col-md-4">
-    <mat-card class="example-card">
-      <mat-card-title>Shiba Inu</mat-card-title>
-      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-      <mat-card-content>
-        <p>This card indeterminates progress bar.</p>
-        <p>{{longText}}</p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
-      </mat-card-actions>
-    </mat-card>
-  </div>
-  <div class="col-md-8">
-    <mat-card class="example-card">
-      <mat-card-title>Shiba Inu</mat-card-title>
-      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-      <mat-card-content>
-        <p>This card indeterminates progress bar.</p>
-        <p>{{longText}}</p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
-      </mat-card-actions>
+  <div class="col">
+    <mat-card>
+      <mat-card-title>
+        <h2>Total Expenses Count</h2>
+      </mat-card-title>
+      <mat-card-subtitle>{{totalExpensesCount}}</mat-card-subtitle>
     </mat-card>
   </div>
 </div>
+<br>
+<mat-card>
+  <h2>Calendar View</h2>
+  <mwl-calendar-month-view [viewDate]="viewDate" [events]="events" [refresh]="refresh"></mwl-calendar-month-view>
+</mat-card>
